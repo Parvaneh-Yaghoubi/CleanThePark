@@ -257,9 +257,9 @@ function init() {
     loop();
 
     // start background music on first user gesture
-    window.addEventListener('pointerdown', function startBG() { 
+    window.addEventListener('click', function startBG() { 
         startBackgroundLoop(); 
-        window.removeEventListener('pointerdown', startBG); 
+        window.removeEventListener('click', startBG); 
     });
 }
 
