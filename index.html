@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Clean the Park! 🌳️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.png"> 
+</head>
+
+<body>
+    <div class="stage">
+        <header>
+            <h1>Clean the Park! ✨🌳️</h1>
+            <div id="message"></div>
+            <div id="level"></div>
+        </header>
+
+        <div class="ground" id="ground" aria-live="polite">
+            <div id="paw">🐾</div>
+            <div id="bin">🗑️</div>
+            <div class="hud">
+                <div class="score">Recycled: <span id="recycled">0</span></div>
+            </div>
+        </div>
+        <audio id="bg-audio" loop src="music/bg-music.mp3"></audio>
+        <audio id="catch-sound" src="music/pop.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="game.js"></script>
+</body>
